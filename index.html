@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-inner">
+        <div class="logo">
+          <img
+            src="data:image/png;base64,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"
+            alt="logo-facbook"
+          />
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+      <nav>
+        <ul class="actions">
+          <li><i class="fa-solid fa-house"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><i class="fa-solid fa-user-group"></i></li>
+        </ul>
+
+        <ul class="profile-note">
+          <li><i class="fa-solid fa-circle-plus"></i></li>
+          <li>
+            <i class="fa-solid fa-message"></i>
+          </li>
+          <li><i class="fa-solid fa-bell"></i></li>
+          <li>
+            <img
+              src="https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/357769618_3100287073449657_8443371162893769781_n.jpg?stp=dst-jpg_s200x200&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEUWc1Av2j17Gl7NSciAQtoqtsSdGUKdgyq2xJ0ZQp2DDBRgLYsMDtlc_coIBhdVLMHAXM6XOvKHvva8lOlZAym&_nc_ohc=jBpISlHoks4Q7kNvgH1MRH2&_nc_ht=scontent.fhan5-6.fna&oh=00_AYBV-YotV2DXzOSoKbsv-FUdYuXw7TsLo_c5c4bfw9SBqg&oe=665B02AE"
+              alt="avatar-user"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="loading">
+        <div class="loader"></div>
+      </div>
+      <div class="container">
+        <div class="user__header">
+          <div class="user-title">Bạn bè</div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="user-links">
+            <div class="user-addfriend"><a href="#">Lời mời kết bạn</a></div>
+            <div class="user-searchfriend"><a href="#">Tìm bạn bè</a></div>
+            <div class="user-btn"><a href="#">...</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="users__container"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

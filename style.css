@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: sans-serif;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 150px;
+}
+
+.logo-inner {
+  display: flex;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.search i {
+  position: absolute;
+  left: 12px;
+  font-size: 20px;
+}
+
+.search input {
+  max-width: 200px;
+  padding: 15px 40px;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  border: 1px solid #ccc;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+
+nav .actions {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .actions li i {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+  cursor: pointer;
+}
+
+nav .profile-note {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav .profile-note li i {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+  cursor: pointer;
+}
+
+nav .profile-note img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+#loading {
+  position: fixed;
+  inset: 0 0 0 0;
+  background: #ccc;
+  display: none;
+  opacity: 0.6;
+}
+
+.loader {
+  border: 16px solid #fff;
+  border-radius: 50%;
+  border-top: 16px solid #34db93;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+main {
+  padding: 10px 150px;
+}
+
+.container {
+  background: #fff;
+}
+
+.users__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 500px;
+  padding: 5px 15px;
+  overflow: auto;
+  background: #fff;
+  margin-top: 3px;
+  box-shadow: 0 0 3px #ddd;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.user__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  font-weight: 600;
+  background: #0866ff;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user__header .user-title {
+  font-size: 24px;
+}
+
+.user__header .user-links {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 30px;
+}
+
+.user__header .user-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 2px 15px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.user__header .user-btn a {
+  cursor: pointer;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row;
+  margin-top: 3px;
+  padding: 10px 30px;
+  font-weight: initial;
+  background: #fff;
+  border: 1px solid #faf8f8;
+  border-radius: 10px;
+}
+
+.user-info {
+  width: 150px;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.user-country {
+  font-weight: 500;
+}
+
+.user-link a {
+  margin-left: 200px;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000;
+}
+
+.item {
+  align-self: center;
+  word-break: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0866ff;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(8, 138, 8);
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+.scrollUp {
+  background: linen;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+}
