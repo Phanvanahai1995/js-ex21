@@ -229,20 +229,25 @@ main {
 }
 
 .user-info {
-  width: 150px;
+  width: 200px;
 }
 
 .user-name {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .user-country {
   font-weight: 500;
+  font-size: 12px;
+}
+
+.user-email {
+  font-size: 12px;
 }
 
 .user-link a {
-  margin-left: 200px;
+  margin-left: 150px;
   font-weight: 800;
   font-size: 18px;
   color: #000;
